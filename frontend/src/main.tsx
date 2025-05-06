@@ -1,11 +1,50 @@
-// import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-// import './index.css'
-import '../src/style/main.scss';
-import App from './App.tsx'
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import App from "./App";
+import Layout from "./layout";
+import Navbar from "./navbar";
 
-createRoot(document.getElementById('root')!).render(
-  // <StrictMode>
-    <App />
-  // </StrictMode>,
-)
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/toto",
+    // element: [<Navbar />, <Layout />],
+    element: <Layout/>,
+  }
+]);
+
+const title = createBrowserRouter([
+  {
+    path: "/",
+    element: "Bienvenue",
+  },
+  {
+    path: "/toto",
+    element: "Toto",
+  }
+]);
+
+const headerElement = document.getElementsByTagName("title")[0];
+if (headerElement) {
+  ReactDOM.createRoot(headerElement).render(
+    <React.StrictMode>
+      <RouterProvider router={title} />
+    </React.StrictMode>
+  );
+}
+const rootElement = document.getElementsByTagName("body")[0];
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  );
+}
