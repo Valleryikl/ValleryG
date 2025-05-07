@@ -1,9 +1,17 @@
-$bg: #000000;
-$text: #ffffff;
+// utils
+@import "utils/effects";
+@import "utils/variables";
 
-body {
-  background-color: $bg;
-  color: $text;
-  margin: 0;
-  font-family: sans-serif;
-}
+// base
+@import "base/reset";
+@import "base/globals";
+@import "base/typography";
+
+// layout
+@import "layout/header";
+
+// components
+@import "components/button";
+
+// pages
+@import "pages/profil";

@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom/client";
 // import App from "./App";
 import Layout from "./layout";
 import Profil from "./pag/profil";
+import "./style/main.scss";
 
 import {
   createBrowserRouter,
@@ -40,7 +41,7 @@ if (headerElement) {
     </React.StrictMode>
   );
 }
-const rootElement = document.getElementsByTagName("body")[0];
+const rootElement = document.querySelector(".content");
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
