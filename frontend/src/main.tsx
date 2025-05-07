@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-// import App from "./App";
+import App from "./App";
 import Layout from "./layout";
 import Profil from "./pag/profil";
 import "./style/main.scss";
@@ -19,6 +19,10 @@ const router = createBrowserRouter([
     path: "/toto",
     // element: [<Navbar />, <Layout />],
     element: <Layout/>,
+  },
+  {
+    path: "/test",
+    element: <App/>,
   }
 ]);
 
@@ -30,6 +34,10 @@ const title = createBrowserRouter([
   {
     path: "/toto",
     element: "Toto",
+  }, 
+  {
+    path: "/test",
+    element: "Test",
   }
 ]);
 
