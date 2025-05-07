@@ -1,5 +1,6 @@
+import Nav from "./components/nav";
 export default function Layout() {
     return (
-        <div>Ahh</div>
+        <Nav/>
     );
 }

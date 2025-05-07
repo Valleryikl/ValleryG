@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <Profil />,
   },
   {
-    path: "/toto",
+    path: "/about",
     // element: [<Navbar />, <Layout />],
     element: <Layout/>,
   },
