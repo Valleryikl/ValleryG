@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import Nav from "../components/nav";
 
 export default function Profil() {
     const typedRef = useRef<HTMLSpanElement>(null);
@@ -28,22 +29,25 @@ export default function Profil() {
     }, []);
 
     return (
-        <section className="section-home" id="Home">
-            <div className="home">
-                <div className="home__info">
-                    <h1>
-                        Full-stack Worlds <span className="violet" ref={typedRef}></span>
-                    </h1>
-                    <p>
-                        As a developer and designer, my mission is to craft immersive digital worlds out of words, design,
-                        and code—worlds that drift effortlessly through the vast galaxy of the Internet, captivating and inspiring their visitors.
-                    </p>
-                    <button id="link-about">About me</button>
+        <>
+            <Nav />
+            <section className="section-home" id="Home">
+                <div className="home">
+                    <div className="home__info">
+                        <h1>
+                            Full-stack Worlds <span className="violet" ref={typedRef}></span>
+                        </h1>
+                        <p>
+                            As a developer and designer, my mission is to craft immersive digital worlds out of words, design,
+                            and code—worlds that drift effortlessly through the vast galaxy of the Internet, captivating and inspiring their visitors.
+                        </p>
+                        <button id="link-about">About me</button>
+                    </div>
+                    <div className="home__foto">
+                        <img src="public/img/Me.png" alt="My foto" />
+                    </div>
                 </div>
-                <div className="home__foto">
-                    <img src="public/img/Me.png" alt="My foto" />
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
