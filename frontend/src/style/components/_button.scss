@@ -1,0 +1,20 @@
+.regular-btn {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 15px;
+    color: rgba(255, 255, 255, 0.838);
+    background-color: #B97EFF;
+    border: none;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: #efe1ff;
+        color: #B97EFF;
+        transform: translateY(-1px);
+    }
+    &:active {
+        color: #7300ff;
+        transform: translateY(0);
+    }
+}

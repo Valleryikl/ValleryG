@@ -41,7 +41,7 @@ export default function Profil() {
                             As a developer and designer, my mission is to craft immersive digital worlds out of words, design,
                             and code—worlds that drift effortlessly through the vast galaxy of the Internet, captivating and inspiring their visitors.
                         </p>
-                        <button id="link-about">About me</button>
+                        <a className="regular-btn" href="/about">About me</a>
                     </div>
                     <div className="home__foto">
                         <img src="public/img/Me.png" alt="My foto" />
