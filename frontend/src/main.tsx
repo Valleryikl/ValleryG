@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import App from "./App";
+// import App from "./App";
 import Layout from "./layout";
-import Navbar from "./navbar";
+import Profil from "./pag/profil";
 
 import {
   createBrowserRouter,
@@ -12,7 +12,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Profil />,
   },
   {
     path: "/toto",
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 const title = createBrowserRouter([
   {
     path: "/",
-    element: "Bienvenue",
+    element: "ValleryG",
   },
   {
     path: "/toto",
