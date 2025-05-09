@@ -90,6 +90,7 @@ window.addEventListener("resize", () => {
 
 // tab
 document.querySelectorAll('.tab').forEach(tab => {
+    console.log(tab);
     tab.addEventListener('click', () => {
       document.querySelector('.tab.active').classList.remove('active');
       tab.classList.add('active');
