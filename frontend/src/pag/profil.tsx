@@ -31,11 +31,11 @@ export default function Profil() {
     return (
         <>
             <Nav />
-            <section className="section-home" id="Home">
-                <div className="home">
-                    <div className="home__info">
+            <section className="section-profil" id="Home">
+                <div className="profil">
+                    <div className="profil__info">
                         <h1>
-                            Full-stack Worlds <span className="violet" ref={typedRef}></span>
+                            Full-stack Worlds <span className="violet" ref={typedRef} id="typed"></span>
                         </h1>
                         <p>
                             As a developer and designer, my mission is to craft immersive digital worlds out of words, design,
@@ -43,7 +43,7 @@ export default function Profil() {
                         </p>
                         <a className="regular-btn" href="/about">About me</a>
                     </div>
-                    <div className="home__foto">
+                    <div className="profil__foto">
                         <img src="public/img/Me.png" alt="My foto" />
                     </div>
                 </div>

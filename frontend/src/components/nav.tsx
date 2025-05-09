@@ -4,7 +4,14 @@ export default function Nav() {
     return (
         <header className="header">
             <nav className="navbar">
-                <NavLink to="/" className="logo">ValleryG</NavLink>
+                <NavLink 
+                    to="/" 
+                    className="logo"
+                    reloadDocument
+
+                    >
+                    ValleryG
+                    </NavLink>
                 {/* <img className="menu" src="./src/assets/img/menu-burger.png" alt="">  for burger menu */}
                 <ul className="nav-list">
                     <li>
@@ -12,7 +19,8 @@ export default function Nav() {
                             to="/" 
                             className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
                             id="Home"
-                            end
+                            reloadDocument
+
                         >
                             Home
                         </NavLink>
@@ -22,6 +30,7 @@ export default function Nav() {
                             to="/about" 
                             className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
                             id="About"
+                            reloadDocument
                         >
                             About
                         </NavLink>
@@ -31,6 +40,7 @@ export default function Nav() {
                             to="/portfolio" 
                             className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
                             id="Portfolio"
+                            reloadDocument
                         >
                             Portfolio
                         </NavLink>
@@ -40,6 +50,7 @@ export default function Nav() {
                             to="/contact" 
                             className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
                             id="Contact"
+                            reloadDocument
                         >
                             Contact
                         </NavLink>

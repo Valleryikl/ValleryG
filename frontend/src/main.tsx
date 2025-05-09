@@ -1,7 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import App from "./App";
-import Layout from "./layout";
+// import Layout from "./layout";
+import About from "./pag/about";
 import Profil from "./pag/profil";
 import "./style/main.scss";
 
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/about",
     // element: [<Navbar />, <Layout />],
-    element: <Layout/>,
+    element: <About/>,
   },
   {
     path: "/test",
@@ -32,8 +33,8 @@ const title = createBrowserRouter([
     element: "ValleryG",
   },
   {
-    path: "/toto",
-    element: "Toto",
+    path: "/about",
+    element: "About",
   }, 
   {
     path: "/test",
