@@ -12,6 +12,12 @@ export default function About() {
         <>
             <Nav />
             <section className="section-about" id="About">
+                <div className="linkBar">
+                    <a href="#up"><img src="./public/img/up-arrow.png" alt="up-arrow icon" /></a>
+                    <a href="#learning"><img src="./public/img/audio-book.png" alt="audio-book icon" /></a>
+                    <a href="#hobby"><img src="./public/img/skateboard.png" alt="skateboard icon" /></a>
+                    <a href="#down"><img src="./public/img/down-arrow.png" alt="down-arrow icon" /></a>
+                </div>
                 <div className="about">
                     <h4>My story</h4>
                     <p>I discovered programming at 14, fascinated by the magic it seemed to hold. Despite early
@@ -20,7 +26,7 @@ export default function About() {
                         Full-stack developer at Epitech's Web@cademie. Now, at 19, my enthusiasm for coding continues to inspire me daily.</p>
                 </div>
 
-                <div className="tabs-container">
+                <div id="learning" className="tabs-container">
                     <div className="tabs">
                         <button className={`tab ${activeTab === "tab1" ? "active" : ""}`} onClick={() => handleTabClick("tab1")}>LEARNING PATH</button>
                         <button className={`tab ${activeTab === "tab2" ? "active" : ""}`} onClick={() => handleTabClick("tab2")}>LANGUAGES</button>
@@ -30,7 +36,7 @@ export default function About() {
                     </div>
 
                     <div className={`tab-content ${activeTab === "tab1" ? "active" : ""}`} id="tab1">
-                    <h4 className="title-animation">In progres</h4>
+                        <h4 className="title-animation">In progres</h4>
                         <ul>
                             <li> <a className="li-link" href="https://www.webacademie.org/">Web@cademie <b>2024-2026</b></a></li>
                             <li> <a className="li-link" href="https://sql-academy.org/en">Sql-academy <b>2025</b></a></li>
@@ -43,7 +49,7 @@ export default function About() {
                         </ul>
                     </div>
                     <div className={`tab-content ${activeTab === "tab2" ? "active" : ""}`} id="tab2">
-                    <h4 className="title-animation">Native language</h4>
+                        <h4 className="title-animation">Native language</h4>
                         <ul>
                             <li className="li-regular">Roumain(Natif)</li>
                         </ul>
@@ -56,7 +62,7 @@ export default function About() {
                         </ul>
                     </div>
                     <div className={`tab-content ${activeTab === "tab3" ? "active" : ""}`} id="tab3">
-                    <div className="tab-container">
+                        <div className="tab-container">
                             <div className="tab-group">
                                 <h4 className="title-animation">Front-end Development</h4>
                                 <p><span className="text-actent">HTML, CSS,</span> and <span className="text-actent">JavaScript</span> are my core tools for building adaptive and interactive interfaces.
@@ -94,7 +100,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className={`tab-content ${activeTab === "tab4" ? "active" : ""}`} id="tab4">
-                    <div className="tab-container">
+                        <div className="tab-container">
                             <div className="tab-group">
                                 <h4 className="title-animation">Self-discipline & Motivation</h4>
                                 <p>I know how to organize my learning and work independently. I don’t wait for instructions
@@ -128,7 +134,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className={`tab-content ${activeTab === "tab5" ? "active" : ""}`} id="tab5">
-                    <h4 className="title-animation">In progres</h4>
+                        <h4 className="title-animation">In progres</h4>
                         <ul>
                             <li>PHP(Symfony)</li>
                             <li>Java(Spring, Angular)</li>
@@ -136,6 +142,41 @@ export default function About() {
                             <li>Go</li>
                             <li>Ruby</li>
                             <li>CMS(Wordpress)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="hobby" className="hobby">
+                    <h2>Hobby</h2>
+                    <div className="hobby-group">
+                        <div className="hobby-item skateboar">
+                            <h3>Skateboard</h3>
+                            <p>When the weather is warm, I love skateboarding — it’s really refreshing.</p>
+                        </div>
+                        <div className="hobby-item manga">
+                            <h3>Manga</h3>
+                            <p>I've loved anime, manga, and everything related to that culture since childhood
+                                — especially the deep meaning behind such beautiful works.</p>
+                        </div>
+                    </div>
+                    <div className="hobby-group">
+                        <div className="hobby-item sport">
+                            <h3>Sport</h3>
+                            <p>I like working out in my free time when I'm not programming — it helps me relax,
+                                and the atmosphere in the gym gives me extra motivation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="down" className="about-me">
+                    <h3>About me</h3>
+                    <div className="about-item">
+                    <div className="about-back"></div>
+                        <ul>
+                            <li>I love listening to the same song on repeat until I get sick of it.</li>
+                            <li>I like it when things are in their place - but I rarely keep it that way.</li>
+                            <li>I don't like phone calls. Neither making them nor answering them.</li>
+                            <li>Sometimes I feel like there's coffee running through my veins instead of blood.</li>
+                            <li>My thoughts are much louder than my voice, that’s why it’s easier for me to write than to speak.</li>
+                            <li>I love looking at the night sky after coding, even though I’ve never studied space.</li>
                         </ul>
                     </div>
                 </div>

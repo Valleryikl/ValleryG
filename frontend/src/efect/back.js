@@ -87,15 +87,3 @@ window.addEventListener("resize", () => {
     dots = [];
     initDots();
 });
-
-// tab
-document.querySelectorAll('.tab').forEach(tab => {
-    console.log(tab);
-    tab.addEventListener('click', () => {
-      document.querySelector('.tab.active').classList.remove('active');
-      tab.classList.add('active');
-  
-      document.querySelector('.tab-content.active').classList.remove('active');
-      document.getElementById(tab.dataset.tab).classList.add('active');
-    });
-  }); 
